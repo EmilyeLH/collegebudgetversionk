@@ -51,6 +51,10 @@ def get_nessie_accounts():
 
     return response.json()
 
+
+
+    return response.json()
+
 @router.post("/nessie/create-test-customer")
 def create_test_customer():
 
@@ -71,6 +75,14 @@ def create_test_customer():
             "zip": "77002"
         }
     }
+
+    response = requests.post(
+        url,
+        params=params,
+        json=customer
+    )
+
+    return response.json()
 
 @router.post("/nessie/create-test-account")
 def create_test_account():
@@ -94,14 +106,6 @@ def create_test_account():
         url,
         params=params,
         json=account
-    )
-
-    return response.json()
-
-    response = requests.post(
-        url,
-        params=params,
-        json=customer
     )
 
     return response.json()
