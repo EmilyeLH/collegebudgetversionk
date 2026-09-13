@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bank Roll - Get Started</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="page-frame">
+      <!-- =========================
+             NAVIGATION
+        ========================== -->
+
+      <header class="navbar">
+        <div class="logo">
+          <a href="index.html"> Bank Roll </a>
+        </div>
+
+        <nav>
+          <a href="dashboard.html"> Dashboard </a>
+
+          <a href="budget.html"> Budget </a>
+
+          <a href="recommendations.html"> Recommendations </a>
+
+          <a href="financial-aid.html"> Financial Aid </a>
+
+          <a href="discounts.html"> Discounts </a>
+        </nav>
+      </header>
+
+      <!-- =========================
+             PAGE CONTENT
+        ========================== -->
+
+      <main class="page-content">
+        <p class="eyebrow">GET STARTED</p>
+
+        <h1>Set up your Bank Roll.</h1>
+
+        <p class="description">
+          Connect your financial information so Bank Roll can build a clearer
+          picture of your money.
+        </p>
+
+        <!-- =========================
+                 STEP 1
+            ========================== -->
+
+        <section class="setup-card">
+          <p class="setup-number">01</p>
+
+          <div class="setup-info">
+            <p class="setup-label">IDENTITY</p>
+
+            <h2>Verify your identity</h2>
+
+            <p>
+              Confirm your identity before connecting your financial
+              information.
+            </p>
+          </div>
+
+          <button id="verify-identity" class="setup-button" type="button">
+            Verify Identity
+          </button>
+        </section>
+
+        <!-- =========================
+                 STEP 2
+            ========================== -->
+
+        <section class="setup-card">
+          <p class="setup-number">02</p>
+
+          <div class="setup-info">
+            <p class="setup-label">BANKING</p>
+
+            <h2>Connect your bank</h2>
+
+            <p>
+              Link your Capital One account so Bank Roll can understand your
+              balance and spending.
+            </p>
+          </div>
+
+          <button id="connect-bank" class="setup-button" type="button">
+            Connect Capital One
+          </button>
+        </section>
+
+        <!-- =========================
+                 STEP 3
+            ========================== -->
+
+        <section class="setup-card">
+          <p class="setup-number">03</p>
+
+          <div class="setup-info">
+            <p class="setup-label">FINANCIAL AID</p>
+
+            <h2>Add your financial aid</h2>
+
+            <p>
+              Upload your award information so Bank Roll can account for grants,
+              loans, and school costs.
+            </p>
+          </div>
+
+          <a href="financial-aid.html" class="setup-button">
+            Add Financial Aid
+          </a>
+        </section>
+
+        <!-- =========================
+                 STEP 4
+            ========================== -->
+
+        <section class="setup-card">
+          <p class="setup-number">04</p>
+
+          <div class="setup-info">
+            <p class="setup-label">BUDGET</p>
+
+            <h2>Review your budget</h2>
+
+            <p>
+              See how much you have available and where your money is going.
+            </p>
+          </div>
+
+          <a href="budget.html" class="setup-button"> View Budget </a>
+        </section>
+
+        <!-- STATUS MESSAGE -->
+
+        <div
+          id="setup-status"
+          class="status-message"
+          style="display: none"
+        ></div>
+      </main>
+    </div>
+
+    <!-- =========================
+         BANK CONNECTION MODAL
+    ========================== -->
+
+    <div id="bank-modal" class="bank-modal" style="display: none">
+      <div class="bank-modal-card">
+        <button
+          id="close-bank-modal"
+          class="modal-close"
+          type="button"
+          aria-label="Close"
+        >
+          ×
+        </button>
+
+        <p class="setup-label">CAPITAL ONE</p>
+
+        <h2>Sign in to connect</h2>
+
+        <p class="modal-description">
+          Connect your account to automatically add your balance and spending
+          activity.
+        </p>
+
+        <form id="bank-login-form">
+          <label for="bank-username"> Username </label>
+
+          <input
+            id="bank-username"
+            type="text"
+            placeholder="Demo username"
+            autocomplete="off"
+            required
+          />
+
+          <label for="bank-password"> Password </label>
+
+          <input
+            id="bank-password"
+            type="password"
+            placeholder="Demo password"
+            autocomplete="off"
+            required
+          />
+
+          <p class="demo-note">
+            Demo connection only. Do not enter real banking credentials.
+          </p>
+
+          <button id="bank-submit" type="submit" class="setup-button">
+            Sign In & Connect
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js?v=20"></script>
+  </body>
+</html>

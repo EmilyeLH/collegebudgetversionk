@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bank Roll - Budget</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="page-frame">
+      <header class="navbar">
+        <div class="logo">
+          <a href="index.html">Bank Roll</a>
+        </div>
+
+        <nav>
+          <a href="dashboard.html">Dashboard</a>
+          <a class="active" href="budget.html">Budget</a>
+          <a href="recommendations.html">Recommendations</a>
+          <a href="financial-aid.html">Financial Aid</a>
+          <a href="discounts.html">Discounts</a>
+        </nav>
+      </header>
+
+      <main class="page-content">
+        <p class="eyebrow">MONTHLY SPENDING PLAN</p>
+
+        <h1>Budget</h1>
+
+        <p class="description">
+          Track your monthly spending and see how much you have left in each
+          category.
+        </p>
+
+        <div id="budget-status" class="status-message">Loading budget...</div>
+
+        <section class="budget-summary">
+          <div class="budget-summary-card">
+            <p>MONTHLY LIMIT</p>
+
+            <h2 id="budget-limit">$0.00</h2>
+          </div>
+
+          <div class="budget-summary-card">
+            <p>SPENT</p>
+
+            <h2 id="budget-spent">$0.00</h2>
+          </div>
+
+          <div class="budget-summary-card">
+            <p>REMAINING</p>
+
+            <h2 id="budget-remaining">$0.00</h2>
+          </div>
+        </section>
+
+        <section class="budget-table" id="budget-table">
+          <div class="budget-row budget-heading">
+            <p>Category</p>
+
+            <p>Limit</p>
+
+            <p>Spent</p>
+
+            <p>Remaining</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bank Roll - Recommendations</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="page-frame">
+      <header class="navbar">
+        <div class="logo">
+          <a href="index.html">Bank Roll</a>
+        </div>
+
+        <nav>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="budget.html">Budget</a>
+          <a class="active" href="recommendations.html">Recommendations</a>
+          <a href="financial-aid.html">Financial Aid</a>
+          <a href="discounts.html">Discounts</a>
+        </nav>
+      </header>
+
+      <main class="page-content">
+        <p class="eyebrow">SMART SPENDING GUIDANCE</p>
+
+        <h1>Recommendations</h1>
+
+        <p class="description">
+          Discover budget-friendly places that help you make the most of your
+          money.
+        </p>
+
+        <div class="trigger-banner">
+          <span class="trigger-badge"> LIVE RECOMMENDATIONS </span>
+
+          <p>Explore affordable places nearby based on your spending goals.</p>
+        </div>
+
+        <div id="recommendation-status" class="status-message">
+          Finding budget-friendly options...
+        </div>
+
+        <section class="rec-section">
+          <h2 class="section-heading">Budget-friendly options near you</h2>
+
+          <div id="recommendation-grid" class="rec-grid"></div>
+        </section>
+
+                <section class="rec-section ai-section">
+          <h2 class="section-heading">Ask Bank Roll AI</h2>
+
+          <p class="description">
+            Get personalized budgeting advice powered by Gemini.
+          </p>
+
+          <div class="ai-chat-box">
+            <textarea
+              id="ai-message"
+              placeholder="Ask Bank Roll a question about budgeting..."
+              rows="3"
+            ></textarea>
+
+            <button id="ask-ai-button" type="button">
+              Ask Bank Roll AI
+            </button>
+
+            <div id="ai-response" class="ai-response"></div>
+          </div>
+        </section>
+
+        <div class="rec-actions">
+          <a href="budget.html" class="secondary-button-link">
+            ← Back to Budget
+          </a>
+
+          <a href="discounts.html" class="primary-button-link">
+            View Student Discounts →
+          </a>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js?v=4"></script>
+  </body>
+
+</html>

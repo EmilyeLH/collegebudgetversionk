@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bank Roll - Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="page-frame">
+      <header class="navbar">
+        <div class="logo">
+          <a href="index.html"> Bank Roll </a>
+        </div>
+
+        <nav>
+          <a class="active" href="dashboard.html"> Dashboard </a>
+
+          <a href="budget.html"> Budget </a>
+
+          <a href="recommendations.html"> Recommendations </a>
+
+          <a href="financial-aid.html"> Financial Aid </a>
+
+          <a href="discounts.html"> Discounts </a>
+        </nav>
+      </header>
+
+      <main class="page-content">
+        <p class="eyebrow">YOUR FINANCES</p>
+
+        <h1>Your Financial Overview</h1>
+
+        <p class="description">
+          A quick look at your budget, spending, bank account, and financial
+          aid.
+        </p>
+
+        <div
+          id="dashboard-status"
+          class="status-message"
+          style="display: none"
+        ></div>
+
+        <!-- MAIN BUDGET CARDS -->
+
+        <section class="dashboard-summary">
+          <div class="dashboard-card">
+            <p>MONTHLY BUDGET</p>
+
+            <h2 id="monthly-budget">$0.00</h2>
+
+            <span> Your current monthly limit </span>
+          </div>
+
+          <div class="dashboard-card">
+            <p>SPENT THIS MONTH</p>
+
+            <h2 id="total-spent">$0.00</h2>
+
+            <span id="percent-used"> 0% of monthly budget </span>
+          </div>
+
+          <div class="dashboard-card">
+            <p>REMAINING</p>
+
+            <h2 id="remaining">$0.00</h2>
+
+            <span> Available this month </span>
+          </div>
+        </section>
+
+        <!-- CATEGORY + TRANSACTIONS -->
+
+        <section class="dashboard-grid">
+          <div class="dashboard-panel">
+            <p class="panel-label">CATEGORY SPENDING</p>
+
+            <h3>Where your money is going</h3>
+
+            <div id="category-spending"></div>
+
+            <a href="budget.html"> View full budget → </a>
+          </div>
+
+          <div class="dashboard-panel">
+            <p class="panel-label">RECENT TRANSACTIONS</p>
+
+            <h3>Latest activity</h3>
+
+            <ul id="transaction-list" class="list-clean"></ul>
+          </div>
+        </section>
+
+        <!-- BANK + FINANCIAL AID -->
+
+        <section class="dashboard-grid">
+          <div class="dashboard-panel">
+            <p class="panel-label">CONNECTED BANK</p>
+
+            <h3>Capital One Demo Account</h3>
+
+            <div id="bank-summary">
+              <p class="muted">
+                Connect your demo account from Get Started to view the balance.
+              </p>
+            </div>
+
+            <a href="get-started.html"> Manage connection → </a>
+          </div>
+
+          <div class="dashboard-panel">
+            <p class="panel-label">FINANCIAL AID</p>
+
+            <h3>Your Aid Summary</h3>
+
+            <div id="financial-aid-summary">
+              <p class="muted">
+                Upload a financial-aid PDF to see your award summary here.
+              </p>
+            </div>
+
+            <a href="financial-aid.html"> View financial aid → </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js?v=10"></script>
+  </body>
+</html>
